@@ -13,7 +13,7 @@ import { Offcanvas, Button, NavDropdown, Nav } from "react-bootstrap";
 
 const Preloader = dynamic(
   () => {
-    return import('../../components/Preloader');
+    return import('../../components/Preloader/Index');
   },
   { ssr: false }
 );
