@@ -1,0 +1,458 @@
+@import "layout";
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  background-color: rgb(8 3 33/1);
+}
+.homepagebg {
+  background-color: rgb(8 3 33/1);
+}
+
+.mainslider {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  z-index: 10;
+  position: relative;
+  background-color: rgb(8 3 33);
+  .maincontain {
+    background-image: linear-gradient(
+      180deg,
+      #3e7dff 0%,
+      rgba(62, 125, 255, 0) 100%
+    );
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  .mainimgleft {
+    z-index: -10;
+    left: 0;
+    top: 0;
+    position: absolute;
+  }
+  .mainimgright {
+    z-index: -10;
+    right: 0;
+    top: 0;
+    position: absolute;
+  }
+  .carousel-caption {
+    position: static;
+    right: 8%;
+    bottom: 1.25rem;
+    left: 8%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+  }
+}
+.hero-contin-one {
+  position: relative;
+
+  .aniimage {
+    position: absolute;
+    animation: HerooneAnimation 7s linear 2s infinite alternate;
+  }
+
+  @keyframes HerooneAnimation {
+    0% {
+      left: 0;
+      top: 0%;
+    }
+
+    50% {
+      left: 0;
+      top: 10%;
+    }
+
+    100% {
+      left: 0;
+      top: 15%;
+    }
+  }
+}
+// Home Slider
+
+.info-hero {
+  // background-image: linear-gradient(
+  //   to right bottom,
+  //   #02082a,
+  //   #011139,
+  //   #011139,
+  //   #031749,
+  //   #0a1b59
+  // );
+  background-image: url(../assets/img/core-img/mainbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+// About Section
+.info-home-about-combine {
+  background-image: linear-gradient(
+    to right bottom,
+    #01113a,
+    #03174a,
+    #091a56,
+    #020a2e,
+    #020a2e
+  );
+}
+.info-home-about {
+  background-image: url(../assets/img/core-img/aboutbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.info-blog-sec {
+  .card {
+    transition: all 0.5s ease-in-out;
+    &:hover {
+      box-shadow: 0px 0px 15px -10px var(--color-main);
+    }
+    a {
+      color: var(--color-main);
+      font-weight: 800;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+// Artificial Inteligence
+.info-home-ai {
+}
+
+.info-home-spacetech {
+  background-image: url(../assets/img/core-img/SpaceTechnology.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  .info-home-space-detail {
+    background-color: #00000057;
+  }
+}
+
+.infobloc-sideimg {
+  position: absolute;
+  left: 0;
+  top: 10%;
+}
+.infobloc-sideimg2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+// About Us Page
+
+.inabout-hero {
+  background-color: var(--color-blue-zodiac);
+}
+.iabout-mission-cards {
+  background-color: var(--color-blue-zodiac);
+}
+
+.card.iab-counter {
+  background-color: transparent;
+}
+
+.porfolio-bannersec {
+  margin-top: -15%;
+}
+
+.info-clinetsec {
+  background-image: url(../assets/img/core-img/Clie.png),
+    url(../assets/img/core-img/ents.png),
+    linear-gradient(to right, rgba(12, 18, 53, 1), rgba(12, 18, 53, 1));
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  background-color: var(--color-main);
+}
+.client-proflie {
+  min-height: 200px;
+  border-color: var(--color-white);
+  background-color: var(--color-blue-zodiac);
+}
+
+.testimonicard {
+  background-color: var(--color-blue-zodiac);
+  color: var(--color-white);
+  background-image: url(../assets/img/core-img/texticote.png);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+// Ai Page
+.aiplatform-arti {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: var(--color-blue-zodiac) url(../assets/img/core-img/aiplatbg.png)
+    center center no-repeat;
+  .info-inner-section {
+    background-image: url(../assets/img/core-img/ailinesbga2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .info-home-space-detail {
+      background-color: #00000057;
+    }
+  }
+}
+
+.info-acordian {
+  .accordion {
+    .accordion-item {
+      border: 1px solid var(--color-dove-gray);
+      .accordion-header {
+        .accordion-button {
+          color: var(--color-white);
+          background-color: var(--color-main2);
+          font-weight: 800;
+          padding: 1.8rem;
+          font-size: 1.3rem;
+          &:hover,
+          &:focus,
+          &.active {
+            outline: none;
+            box-shadow: none;
+          }
+          &::after {
+            width: 2rem;
+            height: 2rem;
+            margin-left: auto;
+            background-size: 1.25rem;
+            background-color: var(--color-mercury);
+            border-radius: 50%;
+            padding: 2px;
+            background-position: 6px 7px;
+          }
+        }
+      }
+      .accordion-body {
+        color: var(--color-white);
+        background-color: var(--color-main2);
+      }
+      &:last-of-type {
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+      &:not(:first-of-type) {
+        border-top: 1px solid var(--color-dove-gray);
+      }
+    }
+  }
+}
+
+// About Rounded Border Css
+
+.aboutbackg {
+  .tm-countdown-wrap.tm-style1 {
+    position: relative;
+    background-color: rgb(45 44 74 / 54%);
+  }
+  .tm-countdown-wrap.tm-style1:before {
+    width: 0;
+    height: calc(100% - 2px);
+    border-width: 1px 0 1px 0;
+    top: 0px;
+    left: 0;
+    -webkit-transition-delay: 0.05s;
+    -o-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    border-color: #7ab9ff;
+    -webkit-animation-name: countdown_box2;
+    animation-name: countdown_box2;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .tm-countdown-wrap.tm-style1:before,
+  .tm-countdown-wrap.tm-style1:after {
+    content: "";
+    border-style: solid;
+    position: absolute;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .tm-purple-color .tm-countdown-wrap.tm-style1:before,
+  .tm-purple-color .tm-countdown-wrap.tm-style1:after {
+    border-color: #8547e2;
+  }
+
+  .tm-countdown-wrap.tm-style1:before,
+  .tm-countdown-wrap.tm-style1:after {
+    content: "";
+    border-style: solid;
+    position: absolute;
+    z-index: 5;
+    border-radius: 3px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .tm-countdown-wrap.tm-style1:before {
+    width: 0;
+    height: calc(100% - 2px);
+    border-width: 1px 0 1px 0;
+    top: 0px;
+    left: 0;
+    -webkit-transition-delay: 0.05s;
+    -o-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    border-color: #7ab9ff;
+    -webkit-animation-name: countdown_box2;
+    animation-name: countdown_box2;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  .tm-countdown-wrap.tm-style1:after {
+    width: calc(100% - 2px);
+    height: 0;
+    border-width: 0 1px 0 1px;
+    top: 0;
+    left: 0px;
+    border-color: #7ab9ff;
+    -webkit-animation-name: countdown_box1;
+    animation-name: countdown_box1;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes countdown_box1 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 100%;
+    }
+    100% {
+      height: 0;
+    }
+  }
+  @keyframes countdown_box1 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 100%;
+    }
+    100% {
+      height: 0;
+    }
+  }
+  @-webkit-keyframes countdown_box2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes countdown_box2 {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}
+
+// Teh Space Section Two
+
+.techspace2 {
+  position: relative;
+  overflow: hidden;
+  padding: 10rem 0rem 10rem;
+  background: url(https://gamfi-next-landing.vercel.app/_next/static/media/banner-bg.ab3e20fd.jpg)
+    center center / cover no-repeat;
+  z-index: 9;
+  .textspaceim1 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+  }
+  .textspaceim2 {
+    position: absolute;
+    left: 10%;
+    top: 5%;
+  }
+  .textspaceim3 {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+  }
+}
+
+.ourtechcard {
+  background-color: rgb(19 27 77/1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  .imgboxe {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.home-client-slider {
+  margin-bottom: -7rem;
+}
+.cliendslider {
+  .slick-dots {
+    bottom: -75px;
+  }
+  .slick-dots li {
+    button:before {
+      border-radius: 50px;
+      height: 7px;
+      width: 20px;
+      background-color: var(--color-dove-gray);
+      content: " ";
+    }
+    &.slick-active,
+    &:hover,
+    &:focus {
+      button:before {
+        opacity: 1;
+        background-color: var(--color-gold);
+      }
+    }
+  }
+}

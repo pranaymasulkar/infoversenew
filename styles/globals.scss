@@ -1,0 +1,52 @@
+// @import 'bootstrap/dist/css/bootstrap.css';
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+@import 'style';
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+}
+
+
+
+
+
+// ======================== Animation Effect On Hover On Image ===================================================
+
+.hoveimage-effect {
+  .efectbox {
+    perspective: 900px;
+  }
+
+  .anicontin {
+    transition: 0.5s all ease;
+    transform: rotateX(60deg) scale(0.7);
+    perspective: 900px;
+    animation: entry 1s linear 1;
+  }
+
+  // .anicontin:hover {
+  //   cursor: pointer;
+  //   transform: rotate(0deg) scale(1) translateY(10px);
+  //   transition: 0.5s all ease;
+  // }
+
+  @keyframes entry {
+    0% {
+      top: -20%;
+      opacity: 0.1;
+    }
+    100% {
+      top: 0%;
+    }
+  }
+}
+.hoveimage-effect:hover .anicontin {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: 0.5s all ease;
+}
